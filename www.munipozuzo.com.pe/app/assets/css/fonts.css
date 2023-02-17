@@ -1,0 +1,46 @@
+/* GothamRounded Bold */
+
+@font-face {
+    font-family: "GothamRounded-Bold";
+    src: url("../fonts/gotham/GothamRounded-Bold.otf");
+}
+
+
+/* GothamRounded Medium */
+
+@font-face {
+    font-family: "GothamRounded-Medium";
+    src: url("../fonts/gotham/GothamRounded-Medium.otf");
+}
+
+
+/* GothamRounded Light */
+
+@font-face {
+    font-family: "GothamRounded-Light";
+    src: url("../fonts/gotham/GothamRounded-Light.otf");
+}
+
+
+/* SERAVEK  LIGHT */
+
+@font-face {
+    font-family: "Seravek-Light";
+    src: url("../fonts/seravek/Seravek-ExtraLight.ttf");
+}
+
+
+/* SERAVEK  MEDIUM */
+
+@font-face {
+    font-family: "Seravek-Medium";
+    src: url("../fonts/seravek/Seravek-Light.ttf");
+}
+
+
+/* SERAVEK  BOLD */
+
+@font-face {
+    font-family: "Seravek-Bold";
+    src: url("../fonts/seravek/Seravek-Bold.ttf");
+}

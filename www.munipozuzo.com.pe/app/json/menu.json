@@ -1,0 +1,219 @@
+[{
+        "name": "Institucional",
+        "path": "#",
+        "mode": "megamenu",
+        "submenu": [{
+                "name": "Datos Generales",
+                "path": "/acerca-de-nosotros",
+                "icon": "about-us-icon"
+            },
+            {
+                "name": "Marco Legal",
+                "path": "/marco-legal",
+                "icon": "law-icon"
+            },
+            {
+                "name": "Estructura Orgánica",
+                "path": "/estructura-organica",
+                "icon": "org-icon"
+            },
+            {
+                "name": "Funcionarios",
+                "path": "/funcionarios",
+                "icon": "employees-icon"
+            },
+            {
+                "name": "ISO 37001",
+                "path": "/denuncias",
+                "icon": "denunciation-icon"
+            }
+        ]
+    },
+    {
+        "name": "Servicios",
+        "path": "#",
+        "mode": "megamenu",
+        "submenu": [{
+                "name": "Administración Y Saneamiento de Inmuebles",
+                "path": "/servicios/administracion-y-saneamiento-de-inmuebles",
+                "icon": "inmuebles-icon"
+            },
+            {
+                "name": "Servicio de Promoción Inmobiliaria",
+                "path": "#",
+                "icon": "inmobiliaria-icon"
+            },
+            {
+                "name": "Subasta pública de inmuebles",
+                "path": "/servicios/subastas",
+                "icon": "subasta-icon"
+            },
+            {
+                "name": "Desarrollo Tecnológico",
+                "path": "/servicios/desarrollo-tecnologico",
+                "icon": "consultoria-icon"
+            },
+            {
+                "name": "Ejecución de Obras Públicas",
+                "path": "/servicios/obras",
+                "icon": "obras-icon"
+            },
+            {
+                "name": "Fondo Editorial",
+                "path": "/servicios/fondo-editorial",
+                "icon": "editorial-icon"
+            }
+        ]
+    },
+    {
+        "name": "Prensa",
+        "path": "#",
+        "mode": "megamenu",
+        "submenu": [{
+                "name": "Notas de prensa",
+                "path": "/prensa/notas-de-prensa",
+                "icon": "inmuebles-icon"
+            },
+            {
+                "name": "Comunicados",
+                "path": "/prensa/comunicados",
+                "icon": "inmobiliaria-icon"
+            }
+        ]
+    },
+    {
+        "name": "Transparencia",
+        "path": "#",
+        "submenu": [{
+                "name": "Datos Generales",
+                "path": "#",
+                "submenu": [{
+                        "name": "Resoluciones de Gerencia",
+                        "path": "/transparencia/datos-generales/resoluciones-gerencia",
+                        "key": "resoluciones-gerencia",
+                        "type": "table"
+                    },
+                    {
+                        "name": "Directivas",
+                        "path": "/transparencia/datos-generales/directivas",
+                        "key": "directivas",
+                        "type": "table"
+                    },
+                    {
+                        "name": "Instructivos",
+                        "path": "/transparencia/datos-generales/instructivos",
+                        "key": "directivas",
+                        "type": "table"
+                    },
+                    {
+                        "name": "Guias",
+                        "path": "/transparencia/datos-generales/guias",
+                        "key": "directivas",
+                        "type": "table"
+                    },
+                    {
+                        "name": "Reglamentos",
+                        "path": "/transparencia/datos-generales/reglamentos",
+                        "key": "directivas",
+                        "type": "table"
+                    },
+                    {
+                        "name": "Memorias Anuales",
+                        "path": "/transparencia/datos-generales/memorias-anuales",
+                        "key": "memorias-anuales",
+                        "type": "memory-yearly-list"
+                    }
+                ]
+            },
+            {
+                "name": "Planeamiento y Organización",
+                "path": "#",
+                "submenu": [{
+                        "name": "PAP",
+                        "path": "/transparencia/planeamiento-organizacion/pap",
+                        "key": "pap",
+                        "title": "Presupuesto Analitico de Personal",
+                        "type": "list"
+                    },
+                    {
+                        "name": "MOF",
+                        "path": "/transparencia/planeamiento-organizacion/mof",
+                        "key": "mof",
+                        "title": "Manual de Organización y Funciones",
+                        "type": "list"
+                    },
+                    {
+                        "name": "ROF",
+                        "path": "/transparencia/planeamiento-organizacion/rof",
+                        "key": "rof",
+                        "title": "Reglamento de Organización y Funciones",
+                        "type": "list"
+                    },
+                    {
+                        "name": "CAP",
+                        "path": "/transparencia/planeamiento-organizacion/cap",
+                        "key": "cap",
+                        "title": "Cuadro para Asignacion de Personal",
+                        "type": "list"
+                    },
+                    {
+                        "name": "POI",
+                        "path": "/transparencia/planeamiento-organizacion/poi",
+                        "key": "poi",
+                        "title": "PLAN OPERATIVO INSTITUCIONAL",
+                        "type": "list"
+                    },
+                    {
+                        "name": "PEI",
+                        "path": "/transparencia/planeamiento-organizacion/pei",
+                        "key": "pei",
+                        "title": "Plan Estratégico Institucional",
+                        "type": "list"
+                    },
+                    {
+                        "name": "Indicadores de Desempeño",
+                        "path": "/transparencia/planeamiento-organizacion/indicadores-desempeño",
+                        "key": "indicadores-desempeño",
+                        "title": "Indicadores de Desempeño",
+                        "type": "list"
+                    },
+                    {
+                        "name": "Manual de Procedimientos",
+                        "path": "/transparencia/planeamiento-organizacion/manual-procedimientos",
+                        "key": "manual-procedimientos",
+                        "title": "Manual de Procedimientos",
+                        "type": "list"
+                    },
+                    {
+                        "name": "Plan Operativo Informatico",
+                        "path": "/transparencia/planeamiento-organizacion/poi-informatico",
+                        "key": "poi-informatico",
+                        "title": "Plan Operativo Informatico",
+                        "type": "list"
+                    }
+                ]
+            },
+            {
+                "name": "Información Presupuestal",
+                "path": "#",
+                "submenu": [{
+                        "name": "PIA - PIM",
+                        "path": "/transparencia/informacion-presupuestal/pia-pim",
+                        "key": "pia-pim",
+                        "type": "list"
+                    },
+                    {
+                        "name": "Balance general",
+                        "path": "/transparencia/informacion-presupuestal/balance-general",
+                        "key": "balance-general",
+                        "type": "list"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Contáctanos",
+        "path": "/contactanos"
+    }
+]

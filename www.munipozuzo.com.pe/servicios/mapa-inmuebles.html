@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<!-- Mirrored from www.munipozuzo.com.pe/servicios/mapa-inmuebles by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 15:47:27 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Saneamiento de inmuebles Emilima</title>
+    <link rel="stylesheet" href="../app/assets/css/maps.css" />
+</head>
+
+<body>
+    <div id="app">
+        <div class="marco top"></div>
+
+        <div id="container-map"></div>
+
+        <div v-show="INTERSECTED" id="tooltip">
+            <strong v-if="INTERSECTED">
+                {{ INTERSECTED.material.userData.name }}
+            </strong>
+            <span v-if="INTERSECTED">
+                {{ INTERSECTED.material.userData.compromises }} inmueble(s)
+            </span>
+        </div>
+
+    </div>
+
+    <!-- CDN VUE JS, CAMBIARLO LUEGO AL SRC ./js/vue.min.js -->
+    <script src="../app/assets/vue/vue.min.js"></script>
+
+    <!-- THREE.JS -->
+    <script src="../app/assets/Three.js/three.min.js"></script>
+    <script src="../app/assets/Three.js/SVGLoader.js"></script>
+    <script src="../app/assets/Three.js/OrbitControls.js"></script>
+    <script src="../app/assets/Three.js/dat.gui.min.js"></script>
+    <script src="../app/assets/Three.js/stats.min.js"></script>
+    <script>
+        var CONFIG = {
+            API_URL: "https://www.munipozuzo.com.pe",
+            INMUEBLES: [{"claveMapa":"Santa_Rosa","ubigeo":150139,"nombre":"Santa Rosa","cantidad":2},{"claveMapa":"Ancon","ubigeo":150102,"nombre":"Ancon","cantidad":1},{"claveMapa":"Carabayllo","ubigeo":150106,"nombre":"Carabayllo","cantidad":3},{"claveMapa":"Comas","ubigeo":150110,"nombre":"Comas","cantidad":0},{"claveMapa":"Independencia","ubigeo":150112,"nombre":"Independencia","cantidad":0},{"claveMapa":"Puente_Piedra","ubigeo":150125,"nombre":"Puente Piedra","cantidad":3},{"claveMapa":"SJL","ubigeo":150132,"nombre":"SAN JUAN DE LURIGANCHO","cantidad":4},{"claveMapa":"Cieneguilla","ubigeo":150109,"nombre":"Cieneguilla","cantidad":1},{"claveMapa":"Lurigancho_-Chosica","ubigeo":150118,"nombre":"Lurigancho - Chosica","cantidad":0},{"claveMapa":"Chaclacayo","ubigeo":150107,"nombre":"Chaclacayo","cantidad":3},{"claveMapa":"Ate","ubigeo":150103,"nombre":"Ate","cantidad":2},{"claveMapa":"Pachacamac","ubigeo":150123,"nombre":"Pachacamac","cantidad":0},{"claveMapa":"Lur\u00edn","ubigeo":150119,"nombre":"Lur\u00edn","cantidad":0},{"claveMapa":"Punta_Hermosa","ubigeo":150126,"nombre":"Punta Hermosa","cantidad":4},{"claveMapa":"Punta_Negra","ubigeo":150127,"nombre":"Punta Negra","cantidad":1},{"claveMapa":"San_Bartolo","ubigeo":150129,"nombre":"San Bartolo","cantidad":0},{"claveMapa":"Santa_Mar\u00eda_del_Mar","ubigeo":150138,"nombre":"Santa Mar\u00eda del Mar","cantidad":1},{"claveMapa":"Pucusana","ubigeo":150124,"nombre":"Pucusana","cantidad":1},{"claveMapa":"VMT","ubigeo":150143,"nombre":"VILLA MARIA DEL TRIUNFO","cantidad":2},{"claveMapa":"VES","ubigeo":150142,"nombre":"VILLA EL SALVADOR","cantidad":0},{"claveMapa":"SJM","ubigeo":150133,"nombre":"SAN JUAN DE MIRAFLORES","cantidad":5},{"claveMapa":"Chorrillos","ubigeo":150108,"nombre":"Chorrillos","cantidad":0},{"claveMapa":"Surco","ubigeo":150140,"nombre":"SANTIAGO DE SURCO","cantidad":2},{"claveMapa":"La_Molina","ubigeo":150114,"nombre":"La Molina","cantidad":6},{"claveMapa":"Barranco","ubigeo":150104,"nombre":"Barranco","cantidad":2},{"claveMapa":"Miraflores","ubigeo":150122,"nombre":"Miraflores","cantidad":0},{"claveMapa":"Surquillo","ubigeo":150141,"nombre":"Surquillo","cantidad":1},{"claveMapa":"San_Borja","ubigeo":150130,"nombre":"San Borja","cantidad":0},{"claveMapa":"San_Isidro","ubigeo":150131,"nombre":"San Isidro","cantidad":0},{"claveMapa":"Lince","ubigeo":150116,"nombre":"Lince","cantidad":0},{"claveMapa":"Jes\u00fas_Mar\u00eda","ubigeo":150113,"nombre":"Jes\u00fas Mar\u00eda","cantidad":1},{"claveMapa":"Magdalena","ubigeo":150120,"nombre":"Magdalena del Mar","cantidad":0},{"claveMapa":"San_Miguel","ubigeo":150136,"nombre":"San Miguel","cantidad":1},{"claveMapa":"Pueblo_Libre","ubigeo":150121,"nombre":"Pueblo Libre","cantidad":0},{"claveMapa":"Bre\u00f1a","ubigeo":150105,"nombre":"Bre\u00f1a","cantidad":0},{"claveMapa":"Cercado","ubigeo":150101,"nombre":"Cercado de Lima","cantidad":151},{"claveMapa":"La_Victoria","ubigeo":150115,"nombre":"La Victoria","cantidad":4},{"claveMapa":"San_Luis","ubigeo":150134,"nombre":"San Luis","cantidad":0},{"claveMapa":"El_Agustino","ubigeo":150111,"nombre":"El Agustino","cantidad":0},{"claveMapa":"Santa_Anita","ubigeo":150137,"nombre":"Santa Anita","cantidad":1},{"claveMapa":"Rimac","ubigeo":150128,"nombre":"Rimac","cantidad":16},{"claveMapa":"SMP","ubigeo":150135,"nombre":"SAN MARTIN DE PORRES","cantidad":3},{"claveMapa":"Los_Olivos","ubigeo":150117,"nombre":"Los Olivos","cantidad":1}]        }
+    </script>
+    <script type="module" src="../app/assets/js/map.js"></script>
+</body>
+
+
+<!-- Mirrored from www.munipozuzo.com.pe/servicios/mapa-inmuebles by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 04 Jan 2023 15:47:30 GMT -->
+</html>
